@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         // 이미지 출력 ImageView 생성
-        val image = ImageView(this).apply {
-            it.setImageDrawalbe(ContextCompat.getDrawable(this, R.drawalbe.lake_1))
+        val image = ImageView(this).also {
+            it.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.lake_1))
         }
         setContentView(R.layout.activity_main)
     }
